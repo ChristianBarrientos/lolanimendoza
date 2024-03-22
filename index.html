@@ -21,7 +21,10 @@
             .logo-img {
             max-height: 150px; /* Ajusta el tamaño máximo del logo según sea necesario */
             margin-top: 70px; 
-        }
+            }
+            .footer-green {
+                background-color: #c8e6c9; /* Cambia este valor al color verde claro deseado */
+            }
         </style>
     </head>
     <body>
@@ -38,12 +41,14 @@
                             <a href="#home" class="nav__link active-link">Inicio</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">Sobre Nosotros</a>
+                            <a href="#sobrenosotros" class="nav__link">Sobre Nosotros</a>
                         </li>
                         <li class="nav__item">
                             <a href="#discover" class="nav__link">Nuestros Productos</a>
                         </li>
-
+                        <li class="nav__item">
+                            <a href="#contacto" class="nav__link">Contacto</a>
+                        </li>
                     </ul>
 
                     <i class="ri-close-line nav__close" id="nav-close"></i>
@@ -57,7 +62,7 @@
 
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home" id="home">
+            <section class="home" id="sobrenosotros">
                 <img src="assets/img/tecnico-agropecuario.jpg" alt="" class="home__img">
 
                 <div class="home__container container grid">
@@ -97,7 +102,7 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about section" id="contact">
                 <div class="about__container container grid">
                     <div class="about__data">
                         <h2 class="section__title about__title">Sobre Nosotros<br> </h2>
@@ -229,41 +234,67 @@
                 </div>
             </section>
 
-            <section class="contact section" id="contact">
-                <div class="contact__container container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="contact__info text-center">
-                                <h2 class="section__title contact__title">Dirección</h2>
-                                <p><i class="fas fa-map-marker-alt fa-4x"></i></p>
-                                <p>Av. Belgrano 123, Ciudad, País</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="contact__info text-center">
-                                <h2 class="section__title contact__title">Teléfono</h2>
-                                <p><i class="fas fa-phone fa-4x"></i></p>
-                                <p><a href="tel:+1234567890">(+12) 3456-7890</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="contact__info text-center">
-                                <h2 class="section__title contact__title">Correo Electrónico</h2>
-                                <p><i class="fas fa-envelope fa-4x"></i></p>
-                                <p><a href="mailto:info@example.com">info@example.com</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="contact__info text-center">
-                                <h2 class="section__title contact__title">Sitio Web</h2>
-                                <p><i class="fas fa-globe fa-4x"></i></p>
-                                <p><a href="https://www.example.com">www.example.com</a></p>
+
+
+            <section class="about section" id="contacto">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Contacto<br> </h2>
+                        <p class="about__description">¿Interesado en colaborar con nosotros? Contáctanos directamente por teléfono, correo electrónico o visita nuestra oficina. ¡Estamos aquí para ti!.
+                             <br>  
+                        </p>
+                        <!--<a href="#" class="button">Reserve a place</a>-->
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="wrapper">
+                                <div class="row no-gutters">
+                               
+                  
+                                    <div class="dbox w-100 d-flex align-items-start">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-map-marker"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                        <p><span>Direccion:</span> 1664 Armani, Mendoza, Argentina</p>
+                                      </div>
+                                  </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-phone"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                        <p><span>Telefono:</span> <a href="tel://5492613616055">+549 261 3616055</a></p>
+                                      </div>
+                                  </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-paper-plane"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                        <p><span>Email:</span> <a href="mailto:comercial@lolanimendoza.com.ar">comercial@lolanimendoza.com.ar</a></p>
+                                      </div>
+                                  </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                        <p><span>Web</span> <a href="#">lolanimendoza.com.ar</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
             </section>
-            
+
+
             
             <!--==================== EXPERIENCE ====================
             <section class="experience section">
@@ -480,7 +511,7 @@
         </main>-->
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        <footer class="footer section footer-green">
             <div class="footer__container container grid">
                 <div class="footer__content grid">
                     <div class="footer__data">
@@ -508,7 +539,7 @@
                         <h3 class="footer__subtitle">Contactanos</h3>
                         <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>1664 Armani, Mendoza, Argentina</p>
                         <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+549 261 3616055</p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>comercial@quyslan.com.ar</p>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>comercial@lolanimendoza.com.ar</p>
                     </div>
     
                     <div class="col-lg-4 col-md-8">
@@ -520,15 +551,11 @@
                         <h6 class="text-light">09:00 am - 12:00 pm</h6>
                     </div>
     
-                    <i class="fa fa-camera-retro fa-lg"></i> fa-lg
-                    <i class="fa fa-camera-retro fa-2x"></i> fa-2x
-                    <i class="fa fa-camera-retro fa-3x"></i> fa-3x
-                    <i class="fa fa-camera-retro fa-4x"></i> fa-4x
-                    <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; Todos los derechos reservadosd.</p>
+                    <p class="footer__copy">&#169; <a href="https://lolanimendoza.com.ar">Lolani Mendoza</a> Todos los derechos reservadosd.</p>
                     <div class="footer__terms">
                         <!--<a href="#" class="footer__terms-link">Terms & Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>-->
